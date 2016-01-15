@@ -25,13 +25,13 @@ function Slide(){
 	 	slide[Current].addEventListener('webkitAnimationEnd', endFunction);
         slide[Current].addEventListener('mozAnimationEnd', endFunction);
   
-        function endFunction(){        //清楚动画函数endFunction作为回调函数，与changeSlide函数异步执行；
+        function endFunction(){        //清除动画函数endFunction作为回调函数，与changeSlide函数异步执行；
         	slide[Last].className = 'slide';  
         	slide[Current].className = 'slide visi';
         	isNotOn = true;            //使用“isNotOn = true"保证每一个click事件在有效反应时间内
-        	Last = Current;            //只对应执行一次changeSlide函数，避免样式添加出现阻塞、混乱。
+        	Last = Current;           //只对应执行一次changeSlide函数，避免样式添加出现阻塞、混乱。
         }
- 
+        
     }
     
     switch_left.addEventListener('click',function () {

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQueryTree</title>
+	<style type="text/css">
+		.folder{font-size: 16px; color: #669999;}
+		.file{font-size: 15px; color: #66cccc;}
+		button{
+			width: 23px;
+			height: 23px;
+			background-color: #ccffff;
+			border-radius: 5px;
+			border: 1px solid #99ccff;
+			margin-top: 40px;
+			margin-left: 100px;
+		}
+	</style>
+	
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="tree.js"></script>
+</head>
+<body>
+<ul id="browser" class="filetree">
+		<li class="folder">Folder 1
+			<ul>
+				<li class="folder">Item 1.1
+					<ul>
+						<li class="file">Item 1.1.1</li>
+					</ul>
+				</li>
+				<li class="folder">Folder 2
+					<ul>
+						<li class="folder">Subfolder 2.1
+							<ul id="folder21">
+								<li class="file">File 2.1.1</li>
+								<li class="file">File 2.1.2</li>
+							</ul>
+						</li>
+						<li class="folder">Subfolder 2.2
+							<ul>
+								<li class="file">File 2.2.1</li>
+								<li class="file">File 2.2.2</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="folder">Folder 3
+					<ul>
+						<li class="file">File 3.1</li>
+					</ul>
+				</li>
+				<li class="file">File 4</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
